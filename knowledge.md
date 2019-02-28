@@ -1,63 +1,65 @@
-# Knowledge-Based Questions #
+# 基于知识的问题 #
 
-*These questions have a right or wrong answer. They should have discrete answers.*
+*这些问题有正确或错误的答案。他们应该有不同的答案。*
+*原文请查看knowledge-EN.md*
 
-## Tech Questions ##
+## 技术问题 ##
 
-### General Pentest ###
+### 常规渗透 ###
 
-1. What are the phases of a penetration test? *@whereistehnarwhal, reddit*
-2. What is the difference between a risk assessment, a vulnerability assessment, and a penetration test? *@whereistehnarwhal, reddit*
-3. When running an nmap scan, what source port can you specify to scan from to commonly bypass firewall rules? *@jstnkndy*
-4. Construct an Nmap SYN scan that does not do DNS lookups, does not ping the host, and only returns open ports for tcp/139 and tcp/445. *@whereistehnarwhal, reddit*
-5. What kind of attack is ARP Spoofing considered and how could you leverage it on a penetration test? *@jstnkndy*
-6. Explain what NBNS poisoning is and how it can be leveraged on a penetration test. *@jstnkndy*
-7. Answer true or false and explain your answer: two-factor authentication protects against session hijacking. *@jstnkndy*
-8. Explain what happens when a connection from your webbrowser to a webserver is initiated on every OSI layer (as detailed as you like). *@dhauenstein*
+1. 渗透测试有哪几阶段？ *@whereistehnarwhal, reddit*
+2. 风险评估、漏洞评估和渗透测试之间有什么区别？ *@whereistehnarwhal, reddit*
+3. 运行 nmap 扫描时，指定从哪个源端口扫描，通常可以绕过防火墙规则？ *@jstnkndy*
+4. 写一个 Nmap 命令，要求使用 SYN 扫描，它不进行 DNS 查找，不 ping 主机，只返回 tcp/139 和 tcp/445 的开放端口。 *@whereistehnarwhal, reddit*
+5. ARP Spoofing 是什么攻击？在渗透测试中如何利用？ *@jstnkndy*
+6. 什么是 NBNS 欺骗（NBNS poisoning）？在渗透测试中如何利用？ *@jstnkndy*
+7. 双因素身份验证可防止会话劫持，是或不是，原因？ *@jstnkndy*
+8. 从浏览器发起连接到服务器，OSI 每一个层都发生了什么？ *@dhauenstein*
 
-### Crypto / Hashes / Passwords ###
+### 加密/哈希/密码 ###
 
-1. Describe the basics of input and output of a stream cipher. *@jstnkndy*
-2. List a couple block ciphers and their characteristics and security concerns. *@jstnkndy*
-3. Describe when you would use a null byte during an application penetration test. *@jstnkndy*
-4. What is the problem with LM hashes? *@jstnkndy* *[According to Justin, "When asking #4 you have to make sure to do it in a Jerry Seinfeld "What's the deal with airplane food?" voice"]*
-5. What is the difference between netNTLM and NTLM hashes? *@jstnkndy*
-6. What is pass the hash? *@jstnkndy*
-7. What is token impersonation? *@jstnkndy*
+1. 说出流加密（对称密钥算法的一种）如何输入和输出。 *@jstnkndy*
+2. 列出几个分组密码，描述其特性和安全性问题。 *@jstnkndy*
+3. 描述在应用程序渗透测试期间何时使用空字节（null byte）。 *@jstnkndy*
+4. LM 哈希（Windows）有什么问题？ *@jstnkndy*
+5. netNTLM 和 NTLM 哈希之间有什么区别？ *@jstnkndy*
+6. 什么是传递哈希？ *@jstnkndy*
+7. 什么是模拟令牌（token impersonation，线程token）？ *@jstnkndy*
 
-### Web Application ###
+### Web 应用 ###
 
-1. Describe what SQL Injection is and how you would test for it? *@jstnkndy*
-2. What about Blind SQL Injection and how is it different from other kinds? *@jstnkndy*
-3. How can SQL Injection lead to remote code execution? *@morgoroth*
-4. How can you execute OS command with mssql injection? *@enddo*
-5. Describe a webshell and how you would upload/use one. *@enddo*
-    1. How would you bypass uploader protections? *@enddo*
-6. Describe Remote Command Execution (RCE). *@enddo*
-    1. How would you prevent it in PHP? *@enddo*
-7. Describe Cross Site Request Forgery. *@jstnkndy*
-    1. How would you prevent it?
-8. Describe the different types of Cross Site Scripting. *@jstnkndy*
-    1. How would you exploit XSS?
-9. What is the purpose of the same origin policy with relation to the document object model? *@jstnkndy*
-10. Describe the basics of input and output of a block cipher. *@jstnkndy*
-11. How does the Heartbleed vulnerability work? *@webbreacher*
-12. How do you exploit the Shellshock vulnerability and what can an attacker do with it? *@webbreacher*
+1. SQL 注入是什么？你会如何测试是否存在该漏洞很难过？ *@jstnkndy*
+2. SQL 盲注(Blind SQL Injection)是什么？它与其他的 SQL 注入类型有什么不同？ *@jstnkndy*
+3. SQL 注入如何导致远程代码执行？ *@morgoroth*
+4. 如何使用 MSSQL 注入执行命令？ *@enddo*
+5. 描述一个 Webshel​​l 以及如何上传/使用它。 *@enddo*
+    1. 如何绕过上传保护措施？ *@enddo*
+6. 描述远程命令执行（RCE）是什么。 *@enddo*
+    1. 如何在 PHP 中阻止 RCE？ *@enddo*
+7. 描述跨站点请求伪造（XSS）。 *@jstnkndy*
+    1. 如何防御 XSS ？
+8. 有哪几种类型的 XSS。 *@jstnkndy*
+    1. 利用 XSS 能做什么？
+9. 与文档对象模型相关的原始策略的目的是什么？ *@jstnkndy*
+10. 描述分组密码的输入和输出的基础知识。 *@jstnkndy*
+11. 心脏出血（Heartbleed）漏洞原理是什么？ *@webbreacher*
+12. 如何利用Shellshock漏洞？攻击者可以利用它做些什么？ *@webbreacher*
 
-### Exploit Development ###
+### EXP开发 ###
 
-1. Describe what Buffer overflow is and how you would test for it? *@enddo*
-2. Describe what SEH is and how you exploit it? *@enddo*
-3. Describe how debugger modules and plugins can speed up basic exploit development? *@enddo*
-4. How would you bypass DEP or ASLR in Windows 7? *@enddo*
-5. How would you bypass SafeSEH? *@enddo*
+1. 描述缓冲区溢出是什么？如何测试该漏洞的存在？ *@enddo*
+2. 描述 SEH 是什么？如何利用它？ *@enddo*
+3. 描述调试器模块和插件如何帮助 EXP 开发更加迅速？ *@enddo*
+4. 如何在 Windows 7 中绕过 DEP 或 ASLR？ *@enddo*
+5. 如何绕过 SafeSEH？ *@enddo*
 
 ### Mobile ###
 
-1. Describe how you root an Android device or Jailbreak an iOS device. *@webbreacher*
+1.如何 root Android 设备或越狱 iOS 设备。 *@webbreacher*
 
-### Active Directory ###
+### 活动目录(Active Directory，域控方面) ###
 
-1. What is kerberoasting? *@leesoh*
-2. What is a golden ticket? *@leesoh*
-3. What is a silver ticket?  *@leesoh*
+1. 什么是 kerberoasting（Kerberos攻击）？ *@leesoh*
+> Kerberos协议在请求访问某个服务时存在一个缺陷，Kerberoasting正是利用这个缺陷的一种攻击技术。
+2. 什么是 golden ticket（Kerberos）？ *@leesoh*
+3. 什么是 silver ticket（Kerberos）？ *@leesoh*
