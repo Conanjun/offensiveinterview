@@ -1,4 +1,5 @@
-# Other Questions #
-*These questions do not fit into the other categories.*
+# 其它问题 #
+*这里的问题不属于其它三类*
 
-## Questions ##
+## 问题 ##
+*暂无*
