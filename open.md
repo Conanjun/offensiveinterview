@@ -1,77 +1,77 @@
-# Open-ended Questions #
+# 开放式问题#
 
-*These questions have no right or wrong answer. They should allow the candidate to provide full responses. The interviewers here are not just looking for complete answers but also keeping track of HOW a candidate responds (rambles, gets distracted, doesn't answer the question, etc.).*
+*这些问题没有正确或错误的答案。面试者要对场景问题回答完整，还需要对面试官接下来的问题有良好的反应（是否会发生吵架、分心、不回答问题等）。*
 
-## People Questions ##
+## 对面试者本人的问题 ##
 
-1. Do you have a blog and, if so, what is the URL? *@digininja*
-2. Do you contribute to open source projects and, if so, which and at what level? *@digininja*
-3. How do you participate in the information security community? *@jstnkndy*
-4. What conferences do you attend? *@digininja*
-5. What conferences have you spoken at? *@digininja*
-6. Name a couple of people in the industry that you'd look to for advice/trust their advice. *Asking this to make sure they are active and know who does what, if they are claiming to be wifi experts and don't name people like Josh Wright then they are lying.* *@digininja*
-7. What methods or sources of information do you use for keeping up to date in the security industry? *@jstnkndy*
-8. If you could have any job in infosec, what would it be an why? *@webbreacher*
-9. What is the coolest thing you have done in infosec? *@webbreacher*
-10. Why would you like to work here? *@webbreacher*
-11. Describe how you learn best? *@webbreacher*
-12. What was the last or most interesting tech project you worked on in your personal time *@cdiaz1971*
-13. Have you participated in any Capture The Flag (CTF) competitions? *@sml555_*
-14. Have you created any CTF challenges (as an organiser)? *@sml555_*
+1. 你有博客吗？有的话，网址是多少? *@digininja*
+2. 你是否为开源项目做过贡献，如果是，那么项目的名称和体量是？ *@digininja*
+3. 你一般活跃在什么信息安全社区？ *@jstnkndy*
+4. 你参加过哪些安全会议？ *@digininja*
+5. 你在哪些安全会议上发过言？ *@digininja*
+6. 说出业内人士的一些信息，那些人是可以给你寻求建议/信任他们的建议的。 *要求确保面试者活跃并知道谁做了什么，如果他们声称自己是无线安全专家但是不知道像 Josh Wright（无线安全专家）那样的人，那么他们就是在撒谎。* *@digininja*
+7. 你使用哪些方法或信息来源来了解安全行业的最新信息？ *@jstnkndy*
+8. 如果你能在信息安全中找到工作，那会是什么原因？ *@webbreacher*
+9. 你在信息安全方面做的最酷的事情是什么？ *@webbreacher*
+10. 你为什么想来本公司工作？ *@webbreacher*
+11. 说一下你怎么学习是学得最快最好的？ *@webbreacher*
+12. 你在个人时间工作的最后或最有趣的技术项目是什么 *@cdiaz1971*
+13. 你参加过夺旗赛（CTF）吗？ *@sml555_*
+14. 你有没有出过CTF题目（作为组织者）？ *@sml555_*
 
-## Tech Questions ##
+## 技术问题 ##
 
-### General Pentest ###
+### 常规渗透 ###
 
-1. You are performing a blackbox penetration test for a client. The only allowable attack vectors are network and application level attacks. Where do you start?  *@jstnkndy*
-    1. Describe how you would find all domains associated with the client *(if they didn’t answer)*
-    2. Describe how you would find all network ranges associated with the client. *(if they didn’t answer)*
-2. During the penetration test you find an instance of Outlook Web Access belonging to the client. Describe how you would attack this. *@jstnkndy*
-    1. Describe how you would find potential usernames to use. *(if they didn’t answer)*
-    2. Describe how you would pick which passwords to use. *(if they didn’t answer)*
-    3. Describe how you would avoid account lockouts. *(if they didn’t answer)*
-3. If you run the following scan without root privileges, describe what would happen: ```nmap www.google.com``` *@jstnkndy*
-    1. What kind of scan was performed? *(if they didn’t answer)*
-    2. How many ports were scanned? *(if they didn’t answer)*
-    3. If you ran the same command as root, describe the differences. *(if they didn’t answer)*
-4. You are launching a Metasploit reverse https meterpreter payload against a host that you know is vulnerable to your attack, but once you type “exploit” nothing happens after it launches the attack, how would you debug this (or what would you change to get your meterpreter session?) *@jstnkndy*
-5. You have successfully initiated a meterpreter session against a Windows host. What type of post exploitation do you perform? *@jstnkndy*
-    1. How would you extract the local password hashes?
-    2. How would you gather cleartext credentials from the machine?
-        1. In your report, what would your recommendation be to prevent this? *@leesoh*
-    3. You attempt to run mimikatz but error occurs, how do you debug this? (or what would you do to try and fix the error?)
-6. Using the same meterpreter session as previous, you are able to dump the local machine hashes, describe what you would do with these. *@jstnkndy*
-7. You are performing an onsite penetration test. You do not want to perform any active scanning. How would you gather credentials? *@jstnkndy*
-    1. What types of attack could you execute with them? *@leesoh*
-8. Suppose you have physical access to a machine on a corporate domain that you are testing. It is connected to their network. You don't have credentials for the domain or local machine. You also have your own laptop. How would you begin testing? *@jstnkndy*
-9. How would you avoid anti virus?
-10. How would you target a database that you know lies behing a jump server with an unkown IP address?
-11. What are commonly vulnerable ports/services/applications?
-12. You have unprivileged Windows credentials, how can you elevate your privileges?
-13. How can SQL Injection lead to remote code execution?
-14. You have a SYSTEM shell on an AD workstation. Describe the process you would take to escalate to Domain Admin. *@leesoh*
-15. What was your favourite penetration test moment, and why? *@leesoh*
-16. When you are on an engagement, how do you manage client data? *@leesoh Look specifically for awareness of the risk of exposure, encryption, and deletion once the engagement is complete.*
+1. 你正在为客户端执行黑盒渗透测试。唯一允许的攻击媒介是网络和应用程序。你会怎么开始渗透？ *@jstnkndy*
+	1. 如何找到与客户相关的所有域名 *（如果他们没有回答）*
+	2. 如何找到与客户端关联的所有网络范围。 *（如果他们没有回答）*
+2. 在渗透测试期间，你找到了一个运行于客户端的 Outlook Web Access 实例。你将如何攻击它？ *@jstnkndy*
+	1. 描述如何找到可能的用户名。 *（如果他们没有回答）*
+	2. 描述如何选择使用哪些密码。 *（如果他们没有回答）*
+	3. 描述如何避免帐户锁定。 *（如果他们没有回答）*
+3. 如果你在没有root权限的情况下运行以下扫描 ```nmap www.google.com```，会发生了什么： *@jstnkndy*
+	1. 进行了什么样的扫描？ *（如果他们没有回答）*
+	2. 扫描了多少个端口？ *（如果他们没有回答）*
+	3. 如果你以 root 身份运行相同的命令，请描述它们之间的差异。 *（如果他们没有回答）*
+4. 你正在对一个已知的、比较脆弱的主机启动 Metasploit 发出了一个 reverse https meterpreter payload，但是一旦你键入“exploit”，它在启动攻击后没有任何反应，你将如何调试（或者你将更改为什么）得到你的 meterpreter session？）*@jstnkndy*
+5. 你已成功启动针对 Windows 主机的 meterpreter session，下一步你执行会 post 什么 exp ？ *@jstnkndy*
+	1. 如何提取本地密码哈希值？
+	2. 如何从服务器收集明文凭据（cleartext credentials）？
+		1. 你会怎么样避免被攻击者收集明文凭据？ *@leesoh*
+	3. 你尝试运行 mimikatz 但发生错误，你如何调试？（或者你会怎样尝试修复错误？）
+6. 使用与之前相同的 meterpreter 会话，你可以 dump 下来服务器的哈希，下一步你将如何使用这些哈希值。 *@jstnkndy*
+7. 你正在进行现场渗透测试，但是你不想执行任何主动扫描，你会如何收集凭据（credentials）？ *@jstnkndy*
+	1. 你可以用它们执行什么类型的攻击？ *@leesoh*
+8. 假设你可以对测试中的公司域上的计算机有物理访问的权限，该机器已经连接到了内网。你没有域或本地计算机的凭据，但你有自己的电脑，你会如何开始测试？ *@jstnkndy*
+9. 你会如何对抗反病毒机制？
+10. 你如何定位一个数据库，这个数据库通过了一个未知IP的代理服务器进行访问？
+11. 通常易受攻击的端口/服务/应用程序有哪些？
+12. 你拥有一个无特殊权限的 Windows 凭据，如何提权？
+13. SQL 注入如何导致远程代码执行？
+14. AD（Active Directory）工作站上有一个 SYSTEM shell，描述提权到域管理员所需的过程。 *@leesoh*
+15. 你最喜欢的渗透测试的哪一部分？为什么？ *@leesoh*
+16. 当你渗透的时候，你如何管理你渗透中产出的各种数据呢？比如说 Nmap、漏洞扫描等报告生成后，你会怎么做去确保每一项都覆盖到呢？最后收尾你会怎么处理这些数据呢？ *@leesoh*
 
-### Crypto/Hashes/Passwords ###
+### 加密/哈希/密码 ###
 
-1. What is the relevance of WPAD on a penetration test and how can it be leveraged? *@jstnkndy*
-2. How would you conduct a pass-the-hash attack using NTLMv1/v2 (or netNTLM if you're a heathen) hashes? *@leesoh Trick question! These hashes cannot be passed.*
+1. WPAD 在渗透测试中的用处是？如何利用它？ *@jstnkndy*
+2. 如何使用 NTLMv1/v2（或者不常用的netNTLM）哈希进行传递哈希攻击？ *@leesoh 坑人的问题，这些哈希都不能传递:>*
 
-### Web Application ###
+### Web应用程序 ###
 
-1. You are performing an application penetration test and you come across a Java applet, describe what you might do with it. *@jstnkndy*
-2. What would you inject into an HTML page of a victim to get their Windows computer to send you their password hashes? *@jstnkndy*
-3. What tests you would perform in the following scenarios: suppose you are assessing an application, the “forgot password” process consists of 3 steps: *@jstnkndy*
-    1. Enter your username
-    2. Answer 3 security questions
-    3. Set a new password
-4. You have found Local File Inclusion in a .php file on a webserver; you want to read the file contents of the local file config.php file on the webserver but the code is being interpreted. How do you gain access to the file contents of config.php? *@jstnkndy*
-5. How would you turn a Local File Inclusion against a Linux host into Command Execution? *@jstnkndy*
-6. Describe how and where in an application you might test for username enumeration. *@jstnkndy*
-7. Are there any security concerns with scoping an authorization cookie to the parent domain? *@jstnkndy*
-8. On a Linux host running MySQL, how would you go about gaining command execution leveraging SQL Injection? *@jstnkndy*
+1. 你正在执行应用程序渗透测试，并且你遇到了一个 Java 应用（applet），你会怎么做？ *@jstnkndy*
+2. 你会在受害者的HTML页面注入什么内容，让他们的 Windows 机器向你发送密码哈希值？ *@jstnkndy*
+3. 场景渗透题：假设你正在测试一个应用，“忘记密码”过程包含3个步骤：*@jstnkndy*
+	1. 输入你的用户名
+	2. 回答3个安全问题
+	3. 设置新密码
+4. 你在 Web 服务器上的 .php 文件中找到了本地文件包含漏洞，这个时候你视图读取本地文件 config.php 的文件内容，但没有执行。这时你如何获得对 config.php 文件内容的访问权限？ *@jstnkndy*
+5. 如何将针对 Linux 主机的本地文件包含漏洞转换为命令执行漏洞？ *@jstnkndy*
+6. 描述你可以测试用户名枚举的应用程序的方式和位置。 *@jstnkndy*
+7. 将授权 Cookie 限定为父域是否存在安全问题？ *@jstnkndy*
+8. 在运行 MySQL 的 Linux 主机上，如何利用 SQL 注入漏洞执行命令？ *@jstnkndy*
 
 ### Mobile ###
 
-1. Describe how you can perform Man-In-The-Middle (MITM) attacks (to view and tamper with the traffic) against mobile devices. *@webbreacher*
+1. 说一下怎么对移动设备进行中间人（MITM）攻击（包括查看和篡改流量）。 *@webbreacher*
