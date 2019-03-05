@@ -10,7 +10,7 @@
 # 该项目的目的
 收集大量的面试问题，以筛选攻击方面（红队/渗透测试）的面试者。
 
-如果您是面试者，想找到一些好问题去问面试官，请访问 @doctorj 的页面：[https://gitlab.com/doctorj/interview-questions/blob/master/interview-questions.yml](https://gitlab.com/doctorj/interview-questions/blob/master/interview-questions.yml)
+如果您是面试者，想找到一些好问题去问面试官，请访问 @doctorj 的页面：[https://gitlab.com/doctorj/interview-questions/interview-questions.yml](https://gitlab.com/doctorj/interview-questions/interview-questions.yml)
 
 # 怎么贡献该项目
 1. 使用分支此存储库的标准方法，进行更改并执行 `pull` 请求以添加您的内容
@@ -25,22 +25,22 @@
 
 现在问题应该遵循以下分类和格式，对应不同的文件。
 
-1. [开放式问题](https://github.com/Leezj9671/offensiveinterview/blob/master/open.md)
+1. [开放式问题](https://github.com/Leezj9671/offensiveinterview/open.md)
    - 这些问题有很多解答，无固定解答
    - 例子：
       - “描述如何使用网络钓鱼攻击危害受害者的笔记本电脑。”
       - “一旦你在数据库服务器上成功获得shell，你会做什么？”
-2. [基于知识的问题](https://github.com/Leezj9671/offensiveinterview/blob/master/knowledge.md)
+2. [基于知识的问题](https://github.com/Leezj9671/offensiveinterview/knowledge.md)
    - 这些问题有一个特定的正确和错误的答案。
    - 例子：
       - “什么是CSRF，它与XSS有什么不同？”
       - “```netcat```和```ncat```之间的主要区别是什么？”
-3. [基于场景的问题](https://github.com/Leezj9671/offensiveinterview/blob/master/scenario.md)
+3. [基于场景的问题](https://github.com/Leezj9671/offensiveinterview/scenario.md)
    - 这些问题是面试官设定情况并允许面试者回答的问题。在他们的回答中，面试官会步步紧逼，给出更多信息|模拟客户|告诉面试者他们采取行动时会发生什么，以便更全面地了解面试者知识的广度和深度。
    - 例子：
       - “我在互联网上有一个/24子网，你是测试者，你将如何执行这项评估？从头到尾的流程都要说一遍”
       - “你刚刚在企业用户子网中黑了一台 Mac OS X 笔记本电脑。你的目标是渗透Active Directory（[活动目录](https://www.cnblogs.com/IFire47/p/6672176.html)，可理解为域渗透），你是如何做到这一点的？”
-4. [其他问题](https://github.com/Leezj9671/offensiveinterview/blob/master/other.md)
+4. [其他问题](https://github.com/Leezj9671/offensiveinterview/other.md)
    - 除了前三项归类的其它问题
    - 例子：
       -  *暂无例子*
