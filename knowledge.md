@@ -36,8 +36,8 @@
     1. 如何绕过上传保护措施？ *@enddo*
 6. 描述远程命令执行（RCE）是什么。 *@enddo*
     1. 如何在 PHP 中阻止 RCE？ *@enddo*
-7. 描述跨站点请求伪造（XSS）。 *@jstnkndy*
-    1. 如何防御 XSS ？
+7. 描述跨站点请求伪造（CSRF）。 *@jstnkndy*
+    1. 如何防御 CSRF ？
 8. 有哪几种类型的 XSS。 *@jstnkndy*
     1. 利用 XSS 能做什么？
 9. 与文档对象模型相关的原始策略的目的是什么？ *@jstnkndy*
